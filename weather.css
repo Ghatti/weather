@@ -1,0 +1,70 @@
+html, body{
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+   
+}
+
+body{
+
+    background-image: url("../assets/clouds.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+p{
+    margin: 0;
+}
+
+div{
+
+    background-color: rgba(0,0,0, 0.7);
+
+}
+
+
+
+#panel{
+   
+    flex: 0 0 35%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#panel p{
+
+    margin: 2vh 0;
+
+}
+
+#sky, #local, #current {
+    flex: 1 0 100%;
+}
+
+#min, #max,#speed, #umidity{
+
+    flex: 1 0 50%;
+
+}
+
+
+
+#footer{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    
+    
+}
