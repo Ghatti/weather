@@ -14,7 +14,7 @@ $(document).ready(function(){
 
             
 
-           $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + coords[0] + "&lon=" + coords[1] +"&units=metric&APPID=300559ed560870a7e312018973c6dc0c", function(json){
+           $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" + coords[0] + "&lon=" + coords[1] +"&units=metric&APPID=300559ed560870a7e312018973c6dc0c", function(json){
 
 
                 
