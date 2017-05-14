@@ -7,6 +7,10 @@ html, body{
    
 }
 
+
+
+
+
 body{
 
     background-image: url("../assets/clouds.jpg");
@@ -16,7 +20,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+    font-size: 18px;
 
 }
 
@@ -24,39 +28,55 @@ p{
     margin: 0;
 }
 
-div{
-
-    background-color: rgba(0,0,0, 0.7);
-
-}
-
 
 
 #panel{
    
-    flex: 0 0 35%;
+    flex: 0 0 80%;
     border-radius: 10px;
+    padding: 0 2vw;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+    background-color: rgba(0,0,0, 0.7);
 }
+
+#icon{
+
+    width: 100px;
+    height: 100px;
+    margin-top: 3vh;
+
+
+}
+
+
 
 #panel p{
 
-    margin: 2vh 0;
-
+    margin: 3vh 0;
+    
 }
 
-#sky, #local, #current {
+#local, #sky, #current,#speed, #humidity{
     flex: 1 0 100%;
 }
 
-#min, #max,#speed, #umidity{
+ 
 
-    flex: 1 0 50%;
+#change{
+
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    min-width: 8vw;
+    min-height: 5vh;
+    border: 0;
+    font-weight: bold;    
+    background-color: red;
+
 
 }
-
 
 
 #footer{
@@ -64,7 +84,23 @@ div{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0,0,0, 0.7);
+    font-size: 12px;
+    padding: 1vh 0;
     
+}
+
+@media all and (min-width: 900px){
+
+    #panel{
     
+        flex: 0 0 35%;
+    }
+
+    #sky, #current,#speed, #humidity{
+
+    flex: 1 0 50%;
+
+    }
+
 }
